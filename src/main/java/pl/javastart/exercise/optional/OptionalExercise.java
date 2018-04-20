@@ -5,18 +5,18 @@ import java.util.Optional;
 public class OptionalExercise {
 
     public Optional createEmptyOptional() {
-        return null;
+        return Optional.empty();
     }
 
     public Optional createOptionalWithValue() {
-        return null;
+        return Optional.of(1);
     }
 
     public Optional<String> createOptionalWithValue(String s) {
-        return null;
+        return Optional.of(s);
     }
 
     public String getOptionalValueOrDefault(Optional<String> optional, String defaultValue) {
-        return null;
+        return optional.orElse(defaultValue);
     }
 }
